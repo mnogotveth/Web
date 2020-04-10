@@ -38,33 +38,29 @@ export default class ArrayHolder {
 
   average() {
     if (!this.arrayStore.length){
-      return 0
-    }else{
-      return this.sum() / this.arrayStore.length;
+      return 0;
     }
+    return this.sum() / this.arrayStore.length;
   }
 
   geometricMean() {
     if (!this.arrayStore.length){
-      return 0
-    }else {
-      return Math.pow(this.sum(), 1 / this.arrayStore.length);
+      return 0;
     }
+    return Math.pow(this.sum(), 1 / this.arrayStore.length);
   }
 
   min() {
     if (!this.arrayStore.length){
-      return 0
-    }else {
-      return Math.min(...this.arrayStore);
+      return 0;
     }
+    return Math.min(...this.arrayStore);
   }
 
   max() {
     if (!this.arrayStore.length){
-      return 0
-    }else {
-      return Math.max(...this.arrayStore);
+      return 0;
     }
+    return Math.max(...this.arrayStore);
   }
 };
