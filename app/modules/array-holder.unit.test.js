@@ -24,6 +24,18 @@ test('get array sum', () => {
   expect(arrayHolder.sum()).toBe(6);
 });
 
+test('get ellement by index', ()=>{
+  const arrayHolder = new ArrayHolder();
+  arrayHolder.set(array);
+  expect(arrayHolder.getElementByIndex(0)).toBe(array[0]);
+});
+
+test('get count elements', ()=>{
+  const arrayHolder = new ArrayHolder();
+  arrayHolder.set(array);
+  expect(arrayHolder.get(array)).toBe(array[1,2,3]);
+});
+
 //homework
 test('expect 0 0 0 0', () => {
   const arrayHolder = new ArrayHolder();
@@ -70,3 +82,4 @@ test('delete all values', () => {
   expect(arrayHolder.min()).toBe(0);
   expect(arrayHolder.max()).toBe(0);
 });
+
