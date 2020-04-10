@@ -33,7 +33,7 @@ test('get ellement by index', ()=>{
 test('get count elements', ()=>{
   const arrayHolder = new ArrayHolder();
   arrayHolder.set(array);
-  expect(arrayHolder.get(array)).toBe(array[1,2,3]);
+  expect(arrayHolder.get()).toBe(array[1,2,3]);
 });
 
 //homework
